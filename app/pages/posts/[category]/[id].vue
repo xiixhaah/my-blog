@@ -6,7 +6,7 @@
     <p>文章 ID：{{ route.params.id }}</p>
   </div>
 </template>
-​
+
 <script setup lang="ts">
 const route = useRoute()
 // 访问 /posts/tech/123 时：

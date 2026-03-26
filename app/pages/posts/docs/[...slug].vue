@@ -7,7 +7,7 @@
     <p>路径片段：{{ route.params.slug }}</p>
   </div>
 </template>
-​
+
 <script setup lang="ts">
 const route = useRoute()
 // 访问 /docs/guide/getting-started 时：

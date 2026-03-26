@@ -16,14 +16,14 @@
     </div>
   </div>
 </template>
-​
+
 <script setup lang="ts">
 // 获取路由参数
 const route = useRoute()
-​
+
 // route.params.id 获取动态参数
 const postId = route.params.id
-​
+
 // 模拟文章数据
 const posts = {
   '1': {
@@ -41,22 +41,23 @@ const posts = {
     content: 'Vue 3 的组合式 API 提供了更灵活的代码组织方式...'
   }
 }
-​
-const post = posts[postId as string]
+
+// const post = posts[postId as string]
+const post = posts[postId as keyof typeof posts];
 </script>
-​
+
 <style scoped>
 .post-detail {
   max-width: 800px;
   margin: 0 auto;
   padding: 2rem;
 }
-​
+
 h1 {
   color: #333;
   margin-bottom: 1rem;
 }
-​
+
 .post-meta {
   color: #666;
   font-size: 0.9rem;
@@ -64,17 +65,17 @@ h1 {
   display: flex;
   gap: 2rem;
 }
-​
+
 .post-content {
   line-height: 1.8;
   margin-bottom: 2rem;
 }
-​
+
 .back-link {
   color: #00dc82;
   text-decoration: none;
 }
-​
+
 .back-link:hover {
   text-decoration: underline;
 }

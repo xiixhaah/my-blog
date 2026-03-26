@@ -18,37 +18,37 @@
     </form>
   </div>
 </template>
-​
+
 <script setup lang="ts">
 const form = reactive({
   name: '',
   email: '',
   message: ''
 })
-​
+
 function handleSubmit() {
   console.log('表单提交:', form)
   // 这里可以调用 API 提交表单
 }
 </script>
-​
+
 <style scoped>
 .contact {
   max-width: 600px;
   margin: 0 auto;
   padding: 2rem;
 }
-​
+
 .form-group {
   margin-bottom: 1.5rem;
 }
-​
+
 label {
   display: block;
   margin-bottom: 0.5rem;
   font-weight: 500;
 }
-​
+
 input,
 textarea {
   width: 100%;
@@ -57,13 +57,13 @@ textarea {
   border-radius: 4px;
   font-size: 1rem;
 }
-​
+
 input:focus,
 textarea:focus {
   outline: none;
   border-color: #00dc82;
 }
-​
+
 button {
   background: #00dc82;
   color: white;
@@ -74,7 +74,7 @@ button {
   cursor: pointer;
   transition: background 0.2s;
 }
-​
+
 button:hover {
   background: #00b368;
 }

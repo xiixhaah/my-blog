@@ -1,3 +1,6 @@
+<!-- Nuxt 会扫描 app/pages/ 目录下的所有 .vue 文件，并根据文件名和目录结构自动生成路由。 -->
+
+
 <template>
   <div>
     <header class="header">
